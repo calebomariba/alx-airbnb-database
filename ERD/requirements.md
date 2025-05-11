@@ -150,11 +150,8 @@ The layout could be organized as follows:
 - Place **Payment** and **Review** adjacent to **Booking** and **Property**, respectively.
 - Position **Message** slightly apart, connected to **User** via two relationships (sender and recipient).
 
-# Airbnb Entity-Relationship Diagram
 
-Below is the ERD for the Airbnb database, rendered using Mermaid.
 
-```mermaid
 erDiagram
     USER ||--o{ PROPERTY : hosts
     USER ||--o{ BOOKING : books
@@ -192,7 +189,8 @@ erDiagram
         DATE start_date
         DATE end_date
         DECIMAL total_price
-        ENUM status([^1]
+        ENUM status
+        TIMESTAMP created_at
     }
     PAYMENT {
         UUID payment_id PK
