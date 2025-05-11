@@ -192,9 +192,7 @@ The normalized schema is as follows:
   - Added index on `Property.location_id` for efficient queries.
   - Existing indexes ( primary keys, `User.email`) remain unchanged.
 
-## Updated ERD (Mermaid Syntax)
-
-The following Mermaid code reflects the normalized schema:
+## Updated ERD (Mermaid Syntax that renders ERD)
 
 ```mermaid
 erDiagram
