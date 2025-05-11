@@ -152,6 +152,13 @@ The layout could be organized as follows:
 
 
 
+### ERD
+
+# Airbnb Entity-Relationship Diagram
+
+Below is the ERD for the Airbnb database, rendered using Mermaid.
+
+```mermaid
 erDiagram
     USER ||--o{ PROPERTY : hosts
     USER ||--o{ BOOKING : books
@@ -190,7 +197,6 @@ erDiagram
         DATE end_date
         DECIMAL total_price
         ENUM status
-        TIMESTAMP created_at
     }
     PAYMENT {
         UUID payment_id PK
