@@ -190,7 +190,7 @@ The normalized schema is as follows:
   - `Property.location_id` references `Location(location_id)`.
 - **Indexes**:
   - Added index on `Property.location_id` for efficient queries.
-  - Existing indexes (e.g., primary keys, `User.email`) remain unchanged.
+  - Existing indexes ( primary keys, `User.email`) remain unchanged.
 
 ## Updated ERD (Mermaid Syntax)
 
