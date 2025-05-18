@@ -48,3 +48,49 @@ The `complex_queries.sql` file includes the following queries:
 ## Contact
 
 For questions or issues, please open an issue in the `alx-airbnb-project-documentation` repository or contact the repository owner.
+
+
+# Airbnb Clone Backend Advanced SQL Scripts
+
+This directory (`database-adv-script/`) contains advanced SQL scripts for the Airbnb Clone project backend, as part of the `alx-airbnb-database` repository. The scripts demonstrate complex SQL operations, including subqueries, based on the database schema defined in `database-script-0x01/schema.sql`.
+
+## Files
+
+- **`README.md`**: This file, documenting the directory and its contents.
+- **`subqueries.sql`**: SQL file containing two subqueries (non-correlated and correlated).
+
+## Overview
+
+The `subqueries.sql` file includes:
+
+1. **Non-Correlated Subquery**:
+   - **Purpose**: Finds all properties with an average rating greater than 4.0.
+   - **Tables**: `properties`, `reviews`.
+   - **Description**: Uses a subquery to identify properties with an average rating > 4.0, then selects matching property details.
+
+2. **Correlated Subquery**:
+   - **Purpose**: Finds users who have made more than 3 bookings.
+   - **Tables**: `users`, `bookings`.
+   - **Description**: Uses a correlated subquery to count bookings per user, filtering for those with more than 3 bookings.
+
+## Repository Structure
+
+- **Repository**: `alx-airbnb-database`
+- **Directory**: `database-adv-script/`
+- **Files**:
+  - `README.md`
+  - `subqueries.sql`
+
+## Usage
+
+- **Execution**: Run the queries in `subqueries.sql` against the Airbnb Clone database.
+- **Development**: Use these queries for backend API endpoints (e.g., GET /api/v1/properties, GET /api/v1/users).
+- **Documentation**: Combine with `database-script-0x01/` and `alx-airbnb-project-documentation`.
+
+## Related Documentation
+- **Database Schema**: `database-script-0x01/schema.sql`
+- **Project Documentation**: `alx-airbnb-project-documentation` (e.g., `requirements.md`)
+
+## Contact
+
+For questions or issues, please open an issue in the `alx-airbnb-database` repository or contact the repository owner.
