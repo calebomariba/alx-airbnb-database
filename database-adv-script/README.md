@@ -94,3 +94,56 @@ The `subqueries.sql` file includes:
 ## Contact
 
 For questions or issues, please open an issue in the `alx-airbnb-database` repository or contact the repository owner.
+
+
+
+# Airbnb Clone Backend Advanced SQL Scripts
+
+This directory (`database-adv-script/`) contains advanced SQL scripts for the Airbnb Clone project backend, as part of the `alx-airbnb-database` repository. The scripts demonstrate complex SQL operations, including subqueries, aggregations, and window functions, based on the database schema defined in `database-script-0x01/schema.sql`.
+
+## Files
+
+- **`README.md`**: This file, documenting the directory and its contents.
+- **`subqueries.sql`**: SQL file containing non-correlated and correlated subqueries.
+- **`aggregations_and_window_functions.sql`**: SQL file containing queries with aggregation and window functions.
+
+## Overview
+
+### subqueries.sql
+Contains two subqueries:
+1. **Non-Correlated Subquery**: Finds properties with an average rating > 4.0 using `IN` and `AVG`.
+2. **Correlated Subquery**: Finds users with more than 3 bookings using a correlated `COUNT`.
+
+### aggregations_and_window_functions.sql
+Contains two queries:
+1. **Aggregation Query**:
+   - **Purpose**: Finds the total number of bookings per user.
+   - **Tables**: `users`, `bookings`.
+   - **Description**: Uses `COUNT` and `GROUP BY` to tally bookings, including users with zero bookings via `LEFT JOIN`.
+2. **Window Function Query**:
+   - **Purpose**: Ranks properties by the total number of bookings.
+   - **Tables**: `properties`, `bookings`.
+   - **Description**: Uses `RANK` over booking counts to assign rankings, with `LEFT JOIN` to include all properties.
+
+## Repository Structure
+
+- **Repository**: `alx-airbnb-database`
+- **Directory**: `database-adv-script/`
+- **Files**:
+  - `README.md`
+  - `subqueries.sql`
+  - `aggregations_and_window_functions.sql`
+
+## Usage
+
+- **Execution**: Run the queries in `subqueries.sql` and `aggregations_and_window_functions.sql` against the Airbnb Clone database to retrieve data for analysis or application logic.
+- **Development**: Use these queries as a reference for building backend API endpoints (e.g., GET /api/v1/users with booking counts, GET /api/v1/properties with rankings).
+- **Documentation**: Combine with `database-script-0x01/` and `alx-airbnb-project-documentation` (e.g., `requirements.md`, `data-flow-diagram/`) for comprehensive project documentation.
+
+## Related Documentation
+- **Database Schema**: `database-script-0x01/schema.sql`
+- **Project Documentation**: `alx-airbnb-project-documentation` (e.g., `features-and-functionalities/`, `requirements.md`)
+
+## Contact
+
+For questions or issues, please open an issue in the `alx-airbnb-database` repository or contact the repository owner.
